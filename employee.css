@@ -1,0 +1,254 @@
+html,
+* {
+  padding: 0;
+  font-size: 18px;
+  text-emphasis-color: white;
+}
+
+.user-profile p span {
+  color: white;
+}
+
+/* Header details */
+header {
+  background-color: #1E1E2C;
+  display: flex;
+  justify-content: space-between;
+  height: 60px;
+  align-items: center;
+  padding: 10px 20px;
+  font-family: aerial, 'Roboto', sans-serif;
+  text-decoration: none;
+}
+
+.logo {
+  margin-left: 10px;
+  display: flex;
+  align-items: left;
+}
+
+img {
+  display: flex;
+  width: 50px;
+}
+
+.user-profile {
+  display: flex;
+  align-items: right;
+}
+
+/* strip */
+.strip {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 60px;
+  background-color: #F29F67;
+  padding: 0 50px;
+}
+
+a {
+  text-decoration: none;
+  border: 5px;
+  border-radius: 5px;
+  padding: 5px;
+  color: rgb(0, 0, 0);
+}
+
+a:hover {
+  background-color: rgb(255, 255, 255);
+}
+
+i {
+  display: flex;
+  color: rgb(0, 0, 0);
+}
+
+i:hover {
+  background-color: rgb(255, 255, 255);
+}
+
+select:hover {
+  background-color: rgb(255, 255, 255);
+}
+
+lable {
+  color: rgb(0, 0, 0);
+}
+
+#sc {
+  display: flex;
+  text-decoration: none;
+  font-size: 18px;
+  width: 1rem;
+}
+
+/* table container */
+.table-container {
+  width: 80%;
+  max-height: 300px;
+  overflow-y: auto;
+  border: 1px solid #ecebeb;
+  margin: 20px auto;
+  background-color: rgb(255, 255, 255);
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th, td {
+  padding: 8px 12px;
+  border: 1px solid #ddd;
+  text-align: left;
+}
+
+th {
+  position: sticky;
+  top: 0;
+  background-color: #f9f9f9;
+  z-index: 1;
+}
+
+.actions {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 80%;
+  margin: 20px auto;
+}
+
+.task {
+  align-items: center;
+}
+
+/* event window */
+.box {
+  margin-left: auto;
+  margin-right: auto;
+  height: 200px;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  background-color: #83ccee;
+  color: rgb(0, 0, 0);
+}
+
+/* Button Styles */
+#addTaskBtn {
+  background-color: #7fd3f5;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#addTaskBtn:hover {
+  background-color: peachpuff;
+}
+
+/* Modal Styles */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0,0,0,0.4);
+}
+
+.modal-content {
+  background-color: white;
+  margin: 15% auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 40%;
+  border-radius: 10px;
+}
+
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 60vh;
+  margin: 0;
+}
+
+.box {
+  margin-top: auto;
+  padding: 20px;
+  background-color: #f0f0f0;
+  text-align: center;
+}
+
+main.table-container {
+  flex: 1;
+}
+
+/* Footer stays at the bottom */
+footer {
+  background-color: #1E1E2C;
+  text-align: center;
+  padding: 150px;
+  margin-top: 75px;
+  color: white;
+}
+
+/* Style for the Font Awesome bars icon */
+.fa-solid.fa-bars {
+  font-size: 25px;
+  color: #000000;
+  margin: 2px;
+  padding: 1px;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+/* Hover effect for the icon */
+.fa-solid.fa-bars:hover {
+  color: #000000;
+}
+
+/* Style for the dropdown container */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown select {
+  appearance: none;
+  font-size: 14px;
+  width: 120px;
+  height: 35px;
+  padding: 5px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* Style for dropdown options */
+.dropdown select option {
+  font-size: 12px;
+}
+
+.dropdown select option:hover {
+  background-color: #f0f0f0;
+}

@@ -1,0 +1,182 @@
+/* General Theme */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #F4F4F4;
+  }
+  
+nav.strip {
+background-color: #f29f6756; /* Original background color */
+color: #fff;
+display: flex;
+justify-content: space-between; /* Adjusted to space items equally */
+align-items: center;  /* Vertical centering */
+padding: 0 10px;      /* Add padding to prevent overflow on sides */
+overflow: visible;    /* Ensure no content gets hidden */
+}
+
+nav.strip a {
+text-decoration: none;
+padding: 5px 20px;      /* Space around the links */
+font-size: 16px;        /* Adjust text size */
+color: black;           /* Text color set to black */
+white-space: nowrap;    /* Prevent text from wrapping */
+}
+
+nav.strip a:hover {
+background-color: rgba(0, 0, 0, 0.2); /* Optional: Add a hover effect */
+}
+
+/* Dropdown Menu Styling */
+nav.strip .dropdown {
+position: relative;
+display: inline-block;
+}
+
+nav.strip .dropdown .dropdown-content {
+display: none;
+position: absolute;
+background-color: #f9f9f9;
+min-width: 160px;
+box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+z-index: 1;
+border-radius: 4px;
+right: 0; /* Aligns the dropdown to the right */
+}
+
+nav.strip .dropdown-content a {
+padding: 3px 10px;
+text-decoration: none;
+display: block;
+color: #000;
+}
+
+nav.strip .dropdown-content a:hover {
+background-color: rgba(0, 123, 255, 0.7);
+}
+
+nav.strip .dropdown:hover .dropdown-content {
+display: block;
+}
+
+/* Ensure no overflow occurs */
+body {
+overflow-x: hidden; /* Prevent horizontal scrolling */
+}
+
+
+  footer {
+    background-color: #1E1E2C;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    margin-top: 20px;
+  }
+
+  /* Task Table Styles */
+  .table-container {
+    background-color: #fff;
+    padding: 40px;
+    margin: 20px auto;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    max-width: 80%;
+  }
+  .table-container table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 0 auto;
+  }
+  .table-container th, .table-container td {
+    padding: 10px;
+    text-align: center;
+    border: 1px solid #ddd;
+  }
+  .table-container th {
+    background-color: rgb(189, 186, 186);
+    color: #1E1E2C;
+  }
+
+  /* Dropdown Menu */
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    border-radius: 4px;
+  }
+  .dropdown-content a {
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    color: #000;
+  }
+  .dropdown-content a:hover {
+    background-color: rgba(0, 123, 255, 0.7);
+  }
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+
+  /* Event Section Styles */
+  .event-container {
+    display: flex;
+    overflow-x: scroll;
+    white-space: nowrap;
+    padding: 20px 10px;
+    background-color: #F4F4F4;
+    border-radius: 5px;
+    margin: 20px 0;
+  }
+  .event {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    margin-right: 15px;
+    background-color:#f29f6756 ;
+    padding: 15px;
+    width: 250px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  .event h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+    color: #1E1E2C;
+  }
+  .event p {
+    font-size: 14px;
+    color: #666;
+    margin: 5px 0;
+  }
+  .event-container::-webkit-scrollbar {
+    height: 8px;
+  }
+  .event-container::-webkit-scrollbar-thumb {
+    background-color: #888;
+    border-radius: 4px;
+  }
+  .event-container::-webkit-scrollbar-thumb:hover {
+    background-color: #555;
+  }
+  /* Button Styles for Update Status */
+button[name="update_status"] {
+background-color: rgba(0, 0, 0, 0.1);
+color: black;
+padding: 10px 20px;
+border: none;
+border-radius: 5px;
+cursor: pointer;
+position: relative;
+float: right; /* Aligns the button to the right */
+margin-right: 20px; /* Adds spacing from the right edge */
+}
+
+button[name="update_status"]:hover {
+background-color: peachpuff;
+}
+

@@ -1,0 +1,88 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f2f2f2;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  min-height: 100vh; /* Ensure it uses full viewport height */
+  margin: 0;
+  padding: 0;
+  overflow-y: auto; /* Ensure scrolling is enabled if content overflows */
+}
+
+h2 {
+  text-align: center;
+  margin: 20px 0; /* Provide some margin around the heading */
+  font-size: 28px; /* Larger font size for visibility */
+  color: #333; /* Ensure visible text color */
+  background-color: #fff; /* Make sure it contrasts with the background */
+  padding: 10px;
+  width: 100%;
+  max-width: 400px; /* Limit the width to match the form */
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Shadow for emphasis */
+}
+
+form {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 400px; /* Limit the width of the form */
+  box-sizing: border-box; /* Include padding and border in the width */
+}
+
+label {
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+input {
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  width: 100%;
+  box-sizing: border-box; /* Prevent overflow from padding */
+}
+
+select {
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  width: 100%;
+  box-sizing: border-box; /* Prevent overflow from padding */
+}
+button {
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  width: 40%;
+  box-sizing: border-box; /* Prevent overflow from padding */
+}
+
+button[type="button"] {
+  background-color: #f44336;
+  color: #fff;
+  border: none;
+}
+
+button[type="submit"] {
+  background-color: #007bff;;
+  color: #fff;
+  border: none;
+}
+button:hover {
+  background-color: #2d91fd;
+}
+
+.button-group {
+  display: flex;
+  justify-content: space-between;
+}

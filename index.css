@@ -1,0 +1,62 @@
+html, body, * {
+  margin: 0;
+  padding: 0;
+  font-size: 20px;
+  font-family: Arial, 'Roboto', sans-serif, 'Poppins', sans-serif;
+  box-sizing: border-box;
+}
+
+body {
+  background-image: url("121.jpeg"); /* Your background image */
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+}
+
+.box {
+  background-color: rgba(255, 255, 255, 0.7); /* Transparent white background */
+  padding: 30px;
+  border-radius: 10px;
+  width: 400px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add some shadow */
+  text-align: center;
+  color: black;
+  margin-top: auto;
+  margin-bottom: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+a {
+  border: none;
+  border-radius: 5px;
+  padding: 10px;
+  color: white;
+  background-color: rgba(0, 123, 255, 0.7); /* Slightly lighter button color */
+  text-decoration: none;
+  margin-bottom: 10px;
+  display: inline-block;
+  cursor: pointer;
+}
+
+#button {
+  color: white;
+  border: none;
+  width: 100px;
+  padding: 10px;
+  border-radius: 5px;
+  background-color: rgba(0, 123, 255, 0.7); /* Adjust button color to match */
+  cursor: pointer;
+  margin: auto;
+}

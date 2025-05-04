@@ -1,0 +1,158 @@
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+  
+body {
+    background-color: #f4f4f4;
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    padding-top: 80px;
+}
+  
+header {
+    background-color: #007bff;
+    padding: 20px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    justify-content: flex-end;
+    align-items: center; /* Center the circle horizontally */
+}
+
+.circle-container {
+    
+    margin-left: 20px; /* Move the circle down to half inside the header */
+}
+
+.circle {
+    position: absolute;
+    top: 100%; /* Half inside the header */
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 150px;
+    height: 150px;
+    background-color: #fff;
+    background-size: cover; /* Ensures the image covers the circle */
+    background-position: center; /* Centers the image */
+    border-radius: 50%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+  
+header h1 {
+    font-size: 45px;
+    margin: 0;
+}
+  
+.profile-container {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 90%;
+    height: 70%;
+    max-width: 900px;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+}
+
+table {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+tr {
+    display: flex;
+    justify-content: space-between;
+}
+
+th, td {
+    width: 48%;
+}
+
+.profile-section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.profile-section .left-column, .profile-section .right-column {
+    width: 48%;
+}
+
+th, td {
+    padding: 12px 0;
+    text-align: left;
+    border-bottom: none;
+}
+
+td {
+    display: flex;
+    flex-direction: column;
+}
+
+td input {
+    margin-top: 8px;
+}
+
+.profile-input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: #f9f9f9;
+}
+
+.profile-input[readonly] {
+    background-color: #e9ecef;
+}
+/* Buttons */
+button {
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    color: #fff;
+    margin-right: 10px;
+}
+
+#edit-btn {
+    background-color: #28a745; /* Green color */
+}
+
+#edit-btn:hover {
+    background-color: #218838; /* Darker green on hover */
+}
+
+#save-btn {
+    background-color: #17a2b8; /* Teal color */
+    display: none; /* Initially hidden */
+}
+
+#save-btn:hover {
+    background-color: #138496; /* Darker teal on hover */
+}
+
+#back-btn {
+    background-color: #6c757d; /* Gray color */
+}
+
+#back-btn:hover {
+    background-color: #5a6268; /* Darker gray on hover */
+}
+
+/* Additional styling for hover effects and responsiveness */
+button:hover {
+    opacity: 0.9;
+}
